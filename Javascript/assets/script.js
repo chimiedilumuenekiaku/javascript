@@ -4,11 +4,11 @@ let usdInput = document.querySelector("#usd")
 let brlInput = document.querySelector("#brl")
 
 usdInput.addEventListener("keyup", ()=> {
-    usdInput.value = formatCurrency(usdInput.value)
+    convert("usd-to-brl")
 })
 
 brlInput.addEventListener("keyup", ()=> {
-    brlInput.value = formatCurrency(brlInput.value)
+    convert("brl-to-usd")
 })
 
 usdInput.value = "1000,00"
@@ -26,7 +26,6 @@ function formatCurrency(value) {
     let formatter = new Intl.NumberFormat("pt-BR", options)
 
     return formatter.format(fixedValue)
-
 }
 
 function fixValue(value) {
@@ -39,16 +38,24 @@ function fixValue(value) {
 }
 
 function convert(type) {
-    if(type="usd-to-brl"){
+    if(type == "usd-to-brl") {
         // ajustar o valor
-
+        let fixedValue = fixValue(usdInput.value)
         // converter o valor
+        let result = fixedValue * dolar
+        result = result.toFixed(2)
         // mostrar no campo de real
+        brlInput.value = formatCurrency(result)
+        
     }
 
-    if(type="brl-to-usd"){
+    if(type == "brl-to-usd") {
         // ajustar o valor
+        let fixedValue = fixValue(brlInput.value)
         // converter o valor
+        let result = fixedValue / dolar
+        result = result.toFixed(2)
         // mostrar no campo de dolar
+        usdInput.value = formatCurrency(result)
     }
 }
