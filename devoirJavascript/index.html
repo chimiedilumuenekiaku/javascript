@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nombre aleatoire</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Devine le nombre</h1>
+        <p> Vous devez trouver  un nombre entre 1 et <span id="maxValue"></span> généré aléatoirement. Vous avez <span id="tentative"></span>  tentatives</p>
+    </header>
+    <section>
+        <div>
+            <form id="myForm" onsubmit="return verifyReply();">
+                <div>
+                    <input type="text" id="valueField" size="4">  
+                    <input type="submit" value="Tester">
+                </div>
+            </form>
+        </div>
+        <p id="lastResult"></p>
+        <p id="result"></p>
+        
+    </section>
+    <footer>
+        <p>&copy; Devoir JavaScript ESECAD</p> 
+    </footer>
+    <script src="main.js" type="text/javascript"></script>
+</body>
+</html>
