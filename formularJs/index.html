@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js" defer></script>
+    <title>Enregistrer Users</title>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Cadastrar Usuario</h1>
+
+        <form name="formuser" action="#" method="POST">
+            <input type="text" name="nome" placeholder="Nome completo">
+            <input type="text" name="email" placeholder="Melhor e-mail">
+            <input type="password" name="senha" placeholder="Senha com minimo 6 caracteres">
+            <input type="password" name="rep_senha" placeholder="Confirmar senha">
+            <input type="submit" onclick="return validar()" value="Cadastrar">
+        </form> 
+    </div>
+    
+</body>
+</html>
