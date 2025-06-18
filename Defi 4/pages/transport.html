@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Empreinte Carbonne-Page transport</title>
+  <link rel="stylesheet" href="../css/pages_tr.css">
+  <script src="../js/script_tr.js" defer></script>
+</head>
+<body>
+  <section class="container">
+    <nav class="sidebar">
+      <ul>
+        <li><a href="numerique.html">Numérique</a></li>
+        <li><a href="transport.html">Transports</a></li>
+        <li><a href="allimentation.html">Allimentation</a></li>
+        <li><a href="../index.html">Deconnexion</a></li>
+      </ul>
+    </nav> 
+    <main class="content">
+      <img src="../images/transport.webp"  alt="transport" class="photo">
+
+     <article class="selectors">
+    <section class="selector">
+        <h2>Usage du Transports</h2>
+      <select id="titre-select">
+        <option value="choix">-- Choisissez un titre --</option>
+        <option value="Voiture électrique">Voiture électrique</option>
+        <option value="Bus électrique">Bus éléctrique</option>
+        <option value="Vélo à assistance électrique">Vélo</option>
+        <option value="Métro">Métro</option>
+        <option value="Tramway">Tramway</option>
+      </select>
+    </section>
+  
+    <section class="selector selectContainer">
+      <article>
+        <h2>Fréquence</h2>
+      <select id="frequence-select" >
+        <option value="">-- Choisissez une fréquence en fonction des Jours --</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+      </article>
+      <article>
+        <h2>Distance Km</h2>
+        <select id="distance-select">
+          <option value="">-- Choisissez votre Distance --</option>
+          <option value="2">0-2 km</option>
+          <option value="5">2-5 km</option>
+          <option value="10">5-10 km</option>
+        </select>
+      </article>
+    </section>
+  
+    <button id="valider-btn" style="display:none;">Calculer mon empreinte</button>
+
+  </article>
+  
+  <section class="resultat">
+    <h2>Résultat :</h2>
+    <p id="zone-resultat">Sélectionnez une option.</p>
+  </section>
+</main>
+</body>
+</html>

@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #028174;
+  }
+  
+  header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }
+
+
+  h2 {
+    padding: 10px;
+    background-color: #fe881d;
+    color: white;
+    border-radius: 30px;
+  }
+  
+  .container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .sidebar {
+    width: 200px;
+    background-color: #fe881d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch; /* Permet aux éléments enfants de s'étendre sur toute la largeur */
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    max-width: 90%; /* Assure que la liste prend toute la largeur de la sidebar */
+  }
+  
+  .sidebar ul li {
+    border-bottom: 0.5px solid #fff /* Ligne de séparation entre les items */
+  }
+  
+  .sidebar ul li a {
+    display: block;
+    width: 100%; /* Chaque lien prend toute la largeur de son conteneur */
+    padding: 10px;
+    color: white;
+    background-color: #f19137;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  .sidebar ul li a:hover {
+    background-color: #fa8e28;
+  }
+  
+  .content {
+    width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #65fadfb4;
+    border-radius: 5px;
+    box-shadow: 0px 0px 40px rgba(255, 255, 255, 1); 
+  }
+  
+  .photo {
+    display: block;
+    margin: 20px auto;
+    width: 400px;
+    height: 200px;
+    border-radius: 50%;
+  }
+  
+  .selectors {
+    margin-top: 20px;
+  }
+  
+  .selector {
+    margin-bottom: 15px;
+  }
+  
+  .resultat {
+    margin-top: 20px;
+  }
+  
+  .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  

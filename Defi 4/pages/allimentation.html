@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Empreinte Carbonne-Page Allimentation</title>
+  <link rel="stylesheet" href="../css/pages_al.css">
+  <script src="../js/script_al.js" defer></script>
+</head>
+<body>
+  <section class="container">
+    <nav class="sidebar">
+      <ul>
+        <li><a href="numerique.html">Numérique</a></li>
+        <li><a href="transport.html">Transports</a></li>
+        <li><a href="allimentation.html">Allimentation</a></li>
+        <li><a href="../index.html">Deconnexion</a></li>
+      </ul>
+    </nav> 
+    <main class="content">
+      <img src="../images/bouffe.jpg"  alt="numerique" class="photo">
+
+     <article class="selectors">
+    <section class="selector">
+        <h2>Usage Allimentation</h2>
+      <select id="titre-select">
+        <option value="">-- Choisissez un titre --</option>
+        <option value="boeuf">Boeuf</option>
+        <option value="poulet">Poulet</option>
+        <option value="poisson">Poisson</option>
+        <option value="kebab">Kebab</option>
+        <option value="frite">Frites</option>
+        <option value="pates">Pates</option>
+      </select>
+    </section>
+  
+    <section class="selector">
+        <h2>Fréquence</h2>
+      <select id="frequence-select" >
+        <option value="">-- Choisissez une fréquence en fonction des Jours --</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+    </section>
+  
+    <button id="valider-btn" style="display:none;">Calculer mon empreinte</button>
+
+  </article>
+  
+  <section class="resultat">
+    <h2>Résultat :</h2>
+    <p id="zone-resultat">Sélectionnez une option.</p>
+  </section>
+  </main>
+</body>
+</html>
